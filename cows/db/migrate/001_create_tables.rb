@@ -24,6 +24,7 @@ class CreateTables < ActiveRecord::Migration
     create_table :farmers_resellers, :id => false do |t|
       t.column :reseller_id, :integer
       t.column :farmer_id, :integer
+      t.timestamps
     end
     create_table :distributors do |t|
       t.column :reseller_id, :integer

@@ -4,4 +4,3 @@ development:
   encoding: unicode
   database: project_development
   username: cti
-  password:

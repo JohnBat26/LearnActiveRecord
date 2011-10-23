@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24b5bc0f-3b21-4d07-9c6b-9864272dcba8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch3/db/migrate/001_create_tables.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch3/db/migrate/003_add_relations.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch3/farmExploper.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ch3/db/migrate/001_create_cows_table.rb" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cows/db/migrate/004_rename_distributors.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cows/db/migrate/005_add_fk_for_distributions.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cows/db/migrate/006_create_addresses.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cows/farmExploper.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ch3/farmExploper.rb" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ch3/Rakefile" afterPath="$PROJECT_DIR$/cows/Rakefile" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ch3/config/database.yml" afterPath="$PROJECT_DIR$/cows/config/database.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ch3/db/migrate/001_create_tables.rb" afterPath="$PROJECT_DIR$/cows/db/migrate/001_create_tables.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ch3/db/migrate/003_add_relations.rb" afterPath="$PROJECT_DIR$/cows/db/migrate/003_add_relations.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ch3/migrate.rb" afterPath="$PROJECT_DIR$/cows/migrate.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LearnActiveRecord.iml" afterPath="$PROJECT_DIR$/LearnActiveRecord.iml" />
     </list>
     <ignored path="LearnActiveRecord.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,9 +72,9 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="migrate.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch3/migrate.rb">
+        <entry file="file://$PROJECT_DIR$/cows/migrate.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="22" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
+            <state line="11" column="42" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -78,32 +83,50 @@
       <file leaf-file-name="migrate.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/migrate.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="9" column="0" selection-start="215" selection-end="246" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="001_create_tables.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ch3/db/migrate/001_create_tables.rb">
+      <file leaf-file-name="001_create_tables.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cows/db/migrate/001_create_tables.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="40" selection-start="886" selection-end="886" vertical-scroll-proportion="0.6976744">
+            <state line="26" column="6" selection-start="711" selection-end="723" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="003_add_relations.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch3/db/migrate/003_add_relations.rb">
+      <file leaf-file-name="004_rename_distributors.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cows/db/migrate/004_rename_distributors.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="58" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.0">
+            <state line="7" column="25" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="003_add_relations.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cows/db/migrate/003_add_relations.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="30" selection-start="804" selection-end="804" vertical-scroll-proportion="0.7948718">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="005_add_fk_for_distributions.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cows/db/migrate/005_add_fk_for_distributions.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="7" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="002_add_indexes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch3/db/migrate/002_add_indexes.rb">
+        <entry file="file://$PROJECT_DIR$/cows/db/migrate/002_add_indexes.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="8" column="3" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
               <folding />
@@ -112,36 +135,27 @@
         </entry>
       </file>
       <file leaf-file-name="farmExploper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch3/farmExploper.rb">
+        <entry file="file://$PROJECT_DIR$/cows/farmExploper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="16" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0">
+            <state line="49" column="104" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rakefile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch3/Rakefile">
+      <file leaf-file-name="006_create_addresses.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cows/db/migrate/006_create_addresses.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="30" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+            <state line="5" column="11" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.log" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch3/log/database.log">
+      <file leaf-file-name="firstConnect.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ch1/firstConnect.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="26" selection-start="2582" selection-end="2582" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+            <state line="9" column="0" selection-start="166" selection-end="347" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -161,22 +175,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/ch1/firstConnect.rb" />
-        <option value="$PROJECT_DIR$/ch3/database.yml" />
-        <option value="$PROJECT_DIR$/ch3/001_create_users_table.rb" />
-        <option value="$PROJECT_DIR$/ch3/001_create_cows_table.rb" />
-        <option value="$PROJECT_DIR$/ch3/db/Rakefile" />
-        <option value="$PROJECT_DIR$/ch3/config/database.yml" />
-        <option value="$PROJECT_DIR$/ch3/migrate.rb" />
         <option value="$PROJECT_DIR$/ch3/Rakefile" />
         <option value="$PROJECT_DIR$/ch3/log/database.log" />
-        <option value="$PROJECT_DIR$/ch3/farmExploper.rb" />
         <option value="$PROJECT_DIR$/ch3/db/migrate/001_create_cows_table.rb" />
         <option value="$PROJECT_DIR$/ch3/db/migrate/002_add_farmer_id_column.rb" />
         <option value="$PROJECT_DIR$/ch3/db/migrate/003_add_indexes.rb" />
         <option value="$PROJECT_DIR$/ch3/db/migrate/004_create_more_tables.rb" />
         <option value="$PROJECT_DIR$/ch3/db/migrate/003_add_relations.rb" />
         <option value="$PROJECT_DIR$/ch3/db/migrate/001_create_tables.rb" />
+        <option value="$PROJECT_DIR$/ch3/config/database.yml" />
+        <option value="$PROJECT_DIR$/ch3/farmExploper.rb" />
+        <option value="$PROJECT_DIR$/cows/db/migrate/001_create_tables.rb" />
+        <option value="$PROJECT_DIR$/cows/db/migrate/004_rename_distributors.rb" />
+        <option value="$PROJECT_DIR$/cows/db/migrate/004_add_fk_for_distributions.rb" />
+        <option value="$PROJECT_DIR$/cows/db/migrate/005_add_fk_for_distributions.rb" />
+        <option value="$PROJECT_DIR$/cows/db/migrate/006_create_addresses.rb" />
+        <option value="$PROJECT_DIR$/cows/farmExploper.rb" />
       </list>
     </option>
   </component>
@@ -242,7 +256,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="cows" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -256,21 +270,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ch3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LearnActiveRecord" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LearnActiveRecord" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch3" />
+              <option name="myItemId" value="cows" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -289,10 +289,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="LearnActiveRecord" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ch3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -339,11 +335,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cows/db/migrate" />
       <recent name="$PROJECT_DIR$/ch3/db/migrate" />
       <recent name="$PROJECT_DIR$/ch3" />
     </key>
   </component>
-  <component name="RunManager" selected="Ruby.migrate">
+  <component name="RunManager" selected="Ruby.farmExploper">
     <configuration default="false" name="firstConnect" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="LearnActiveRecord" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -389,7 +386,7 @@
     <configuration default="false" name="migrate" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="LearnActiveRecord" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/ch3" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/cows" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -400,7 +397,7 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/ch3/migrate.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/cows/migrate.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="Run" />
@@ -411,7 +408,7 @@
     <configuration default="false" name="Rakefile" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="LearnActiveRecord" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/ch3" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/cows" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
@@ -422,9 +419,31 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/ch3/Rakefile" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/cows/Rakefile" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="farmExploper" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="LearnActiveRecord" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/cows" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/cows/farmExploper.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -628,11 +647,12 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Ruby.firstConnect" />
       <item index="1" class="java.lang.String" itemvalue="Ruby.checkRandom" />
       <item index="2" class="java.lang.String" itemvalue="Ruby.migrate" />
       <item index="3" class="java.lang.String" itemvalue="Ruby.Rakefile" />
+      <item index="4" class="java.lang.String" itemvalue="Ruby.farmExploper" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -656,23 +676,23 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995495" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.6385135" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24324325" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31193694" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UML Diagrams" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959402" sideWeight="0.6385135" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Kahlua" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995495" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1832265" sideWeight="0.670045" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3614865" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1832265" sideWeight="0.7995495" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20045045" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Graphical Navigator" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -703,7 +723,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change IDE configs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add relations" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -718,6 +738,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Continue learn ActiveRecord: first manual migration with rake without RoR" />
     <MESSAGE value="Change IDE configs" />
+    <MESSAGE value="Add relations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -725,6 +746,14 @@
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/ch1/firstConnect.rb</url>
           <line>48</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/cows/farmExploper.rb</url>
+          <line>94</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/cows/db/migrate/001_create_tables.rb</url>
+          <line>31</line>
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -734,16 +763,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-rc1/gems/activerecord-3.1.1/lib/active_record/version.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.1/lib/active_support/core_ext/logger.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/logger.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="302" column="6" selection-start="8919" selection-end="8919" vertical-scroll-proportion="0.0" />
@@ -754,36 +773,16 @@
         <state line="1548" column="10" selection-start="66924" selection-end="66924" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch1/firstConnect.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="41" selection-start="1224" selection-end="1224" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch3/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="11" selection-start="0" selection-end="11" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch3/migrate.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="22" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrate.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch3/Rakefile">
+    <entry file="file://$PROJECT_DIR$/cows/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="30" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch3/log/database.log">
+    <entry file="file://$PROJECT_DIR$/cows/log/database.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="26" selection-start="2582" selection-end="2582" vertical-scroll-proportion="0.0" />
+        <state line="468" column="0" selection-start="41941" selection-end="41941" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
@@ -791,30 +790,79 @@
         <state line="8" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch3/farmExploper.rb">
+    <entry file="file://$PROJECT_DIR$/cows/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="16" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0">
+        <state line="3" column="2" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch3/db/migrate/002_add_indexes.rb">
+    <entry file="file://$PROJECT_DIR$/ch1/firstConnect.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="166" selection-end="347" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrate.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="215" selection-end="246" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cows/db/migrate/002_add_indexes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="3" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch3/db/migrate/003_add_relations.rb">
+    <entry file="file://$PROJECT_DIR$/cows/db/migrate/005_add_fk_for_distributions.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="58" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.0">
+        <state line="10" column="7" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch3/db/migrate/001_create_tables.rb">
+    <entry file="file://$PROJECT_DIR$/cows/db/migrate/001_create_tables.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="40" selection-start="886" selection-end="886" vertical-scroll-proportion="0.6976744">
+        <state line="26" column="6" selection-start="711" selection-end="723" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cows/migrate.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="42" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cows/db/migrate/006_create_addresses.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="11" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cows/farmExploper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="104" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cows/db/migrate/004_rename_distributors.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cows/db/migrate/003_add_relations.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="30" selection-start="804" selection-end="804" vertical-scroll-proportion="0.7948718">
           <folding />
         </state>
       </provider>
